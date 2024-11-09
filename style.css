@@ -58,6 +58,86 @@ body {
     color: black;
 }
 
+.masvendidos {
+    text-align: center;
+    background-color: rgba(238, 30, 30, 0.356);
+    color: #ffffff;
+}
+/* Contenedor del slider */
+.slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilos para el slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo de cada diapositiva */
+.slide {
+    min-width: 50%;
+    overflow: hidden;
+    
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Animación para deslizar las imágenes */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Aplicando la animación al slider */
+.slider {
+    animation: slide 12s infinite;
+}
+
+.conocenos {
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0.308);
+    color: #ffffff;
+}
+
+.textoimagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
+.mamaimagen {
+    width: 10px;
+    object-fit: cover;
+}
+
+.mamadescripcion {
+    font-size: 16px;
+    max-width: 400px;
+}
+
 .footer {
     background-color:#efb8dc ;
     padding: 20px 0;
@@ -166,6 +246,9 @@ body {
 .carritob i {
     margin-right: 8px;
 }
+
+
+
 
 
 
