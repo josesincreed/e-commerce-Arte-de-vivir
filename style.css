@@ -16,7 +16,8 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 85px;
-    padding: 5px 10%;
+    padding: 5px 2%;
+    
 }
 
 .header .logo {
@@ -24,13 +25,16 @@ body {
 }
 
 .header .logo img{
-    height: 75px;
-    width: auto;
+    height: 55px;
+    width: 450px;
     transition: all 0.3;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+    
+    
 }
 
 .header .logo img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .header .nav-links{
@@ -53,13 +57,20 @@ body {
     text-decoration: none;
     
 }
+
+.boton {
+    background-color: #ffffff79;
+    border-radius: 25px;
+}
+
+
 #cartbut {
     background-color: #ffffff79;
     padding: 10px 15px;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 30%;
+    border-radius: 25px;
 }
 #cartbut:hover {
     background-color: #000000;
@@ -72,10 +83,9 @@ body {
 
 .masvendidos {
     text-align: center;
-    background-color: rgba(238, 30, 30, 0.356);
+    background-color: rgba(128, 0, 128, 0.308);
     color: #ffffff;
 }
-/* Contenedor del slider */
 .slider-container {
     width: 100%;
     max-width: 800px;
@@ -84,13 +94,13 @@ body {
     position: relative;
 }
 
-/* Estilos para el slider */
+
 .slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-/* Estilo de cada diapositiva */
+
 .slide {
     min-width: 50%;
     overflow: hidden;
@@ -102,7 +112,7 @@ body {
     display: block;
 }
 
-/* Animación para deslizar las imágenes */
+
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -121,7 +131,7 @@ body {
     }
 }
 
-/* Aplicando la animación al slider */
+
 .slider {
     animation: slide 12s infinite;
 }
@@ -146,8 +156,9 @@ body {
 }
 
 .mamadescripcion {
-    font-size: 16px;
-    max-width: 400px;
+    font-size: 18px;
+    max-width: 600px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .footer {
@@ -251,7 +262,7 @@ body {
 }
 
 .carritob:hover {
-    background-color: darkred;
+    background-color: rgba(139, 0, 0, 0.568);
 }
 
 
@@ -264,7 +275,7 @@ body {
     position: fixed;
     bottom: 250px;
     right: 20px;
-    background-color: #ff00aa;
+    background-color: rgba(238, 30, 30, 0.356);
     border-radius: 50%;
     padding: 15px;
     color: white;

@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="icon" href="multimedia/logo-icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="carrito.css">
 
 </head>
 <body>
     <header class="header">
         <div class="logo">
            <a href="index.html">
-              <img src="multimedia/logo.jpg" alt="logo de la marca">
+            <img src="multimedia/banner2.png" alt="logo de la marca">
            </a>
            
         </div>
@@ -30,63 +28,54 @@
             <li><a href="perfumes.html">Perfumes</a></li>
             <li><a href="login.html">Inicar sesion</a></li>
             <a href="shippingcart.html"> <i class="fa-solid fa-cart-shopping" id="cartbut"></i></a>
-    
-           
            </ul>
-
         </nav>
-      
-        
     </header>
     
-  </div><br><br>
-   <br><br>
-   <h2 class="conocenos">Tu carrito de compras</h2>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Sugerencias/Reclamos</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <button type="button" class="btn btn-success">ENVIAR</button>
-         <br>
-        <h2>Ponte en contacto con nosotros</h2>
-    <br>
-    <form action="#" method="post">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required placeholder="Nombre" autofocus> 
-        <label for="name">Correo:</label>
-        <input type="email" id="email" name="email" required placeholder="Email" >
-        <label for="name">Telefono:</label>
-        <input type="" id="telefono" name="telefono" required placeholder="Telefono">
-        <input type="submit" value="Enviar" id="enviar">
-    </form> <br>
-</div><br>
-<label for="chat-toggle" class="chati">
-   💬
-</label>
-<input type="checkbox" id="chat-toggle"  class="chat-toggle">
-<div class="chatv">
-<div class="chat-header">
-    Soporte en línea
-    <label for="chat-toggle" class="close-chat">X</label>
-</div>
-<div class="chat-body">
-    <p><strong>Agente:</strong> Hola, ¿en qué puedo ayudarte?</p>
-</div>
-<div class="chat-footer">
-    <input type="text" placeholder="Escribe un mensaje..." disabled>
-    <button>✉️</button>
-</div>
-</div>
+    <div class="cart-container">
+      <h2 class="conocenos">Tu carrito de compras</h2>
+      
 
-    <p>Elegir metodo de contacto: <input list="listaContacto"></p>
-    <datalist id="listaContacto">
-        <option value="Email"></option>
-        <option value="Telefono"></option>
-    </datalist> <br>
+      <!-- Lista de productos en el carrito -->
+      <div class="cart-items">
+          <div class="cart-item">
+              <img src="multimedia/manillarosada.jpg" alt="Producto 1" class="cart-item-img">
+              <div class="item-details">
+                  <h3 class="item-name">Pulsera Artesanal</h3>
+                  <p class="item-price">Precio: $10.000</p>
+                  <div class="item-quantity">
+                      <label for="quantity1">Cantidad:</label>
+                      <input type="number" id="quantity1" value="1" min="1">
+                  </div>
+              </div>
+              <button class="remove-btn">Eliminar</button>
+          </div>
+
+          <div class="cart-item">
+              <img src="multimedia/rosa.jpg" alt="Producto 2" class="cart-item-img">
+              <div class="item-details">
+                  <h3 class="item-name">Collar Hecho a Mano</h3>
+                  <p class="item-price">Precio: $18.000</p>
+                  <div class="item-quantity">
+                      <label for="quantity2">Cantidad:</label>
+                      <input type="number" id="quantity2" value="1" min="1">
+                  </div>
+              </div>
+              <button class="remove-btn">Eliminar</button>
+          </div>
+      </div>
+
+      <!-- Total y botones -->
+      <div class="cart-summary">
+          <p><strong>Total: $28.00</strong></p>
+          <button class="checkout-btn">Proceder al pago</button>
+      </div>
+  </div>
+
+
+  </div>
+   
+   
         <footer class="footer">
             <div class="container">
                <div class="footer-row">
