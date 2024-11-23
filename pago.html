@@ -9,6 +9,7 @@
     <link rel="icon" href="multimedia/logo-icono.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="pago.css">
 
 </head>
 <body>
@@ -32,48 +33,41 @@
         </nav>
     </header>
     
-    <div class="cart-container">
-      <h2 class="conocenos">Tu carrito de compras</h2>
-      
+    <div class="payment-container">
+        <h2>Formulario de Pago</h2>
+        <form action="#">
+            
+            <label for="cardholder-name">Nombre del titular</label>
+            <input type="text" id="cardholder-name" placeholder="Nombre completo" required>
+            
+        
+            <label for="card-number">Número de tarjeta</label>
+            <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
 
-      
-      <div class="cart-items">
-          <div class="cart-item">
-              <img src="multimedia/manillarosada.jpg" alt="Producto 1" class="cart-item-img">
-              <div class="item-details">
-                  <h3 class="item-name">Pulsera Artesanal</h3>
-                  <p class="item-price">Precio: $10.000</p>
-                  <div class="item-quantity">
-                      <label for="quantity1">Cantidad:</label>
-                      <input type="number" id="quantity1" value="1" min="1">
-                  </div>
-              </div>
-              <button class="remove-btn">Eliminar</button>
-          </div>
+            
+            <div class="expiration-cvv">
+                <div>
+                    <label for="expiry-date">Fecha de expiración</label>
+                    <input type="text" id="expiry-date" placeholder="MM/AA" maxlength="5" required>
+                </div>
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="XXX" maxlength="3" required>
+                </div>
+            </div>
 
-          <div class="cart-item">
-              <img src="multimedia/rosa.jpg" alt="Producto 2" class="cart-item-img">
-              <div class="item-details">
-                  <h3 class="item-name">Collar Hecho a Mano</h3>
-                  <p class="item-price">Precio: $18.000</p>
-                  <div class="item-quantity">
-                      <label for="quantity2">Cantidad:</label>
-                      <input type="number" id="quantity2" value="1" min="1">
-                  </div>
-              </div>
-              <button class="remove-btn">Eliminar</button>
-          </div>
-      </div>
+            
+            <label for="payment-method">Método de pago</label>
+            <select id="payment-method" required>
+                <option value="credit-card">Tarjeta de crédito</option>
+                <option value="debit-card">Tarjeta de débito</option>
+                <option value="paypal">PayPal</option>
+            </select>
 
-    
-      <div class="cart-summary">
-          <p><strong>Total: $28.00</strong></p>
-         <a href="pago.html"> <button class="checkout-btn">Proceder al pago</button></a>
-      </div>
-  </div>
-
-
-  </div>
+            
+            <button type="submit">Pagar Ahora</button>
+        </form>
+    </div>
    
    
         <footer class="footer">

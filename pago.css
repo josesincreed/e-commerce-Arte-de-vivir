@@ -1,0 +1,71 @@
+.payment-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 450px;
+    height: 480px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 50px auto;
+}
+
+.payment-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fa40c2ee;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #f1b4dd;
+    color: #fff;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #080808;
+}
+
+
+.expiration-cvv {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.expiration-cvv div {
+    flex: 1;
+}
+
+button {
+    padding: 10px;
+    background-color: #5f1252e3;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f8354f;
+}

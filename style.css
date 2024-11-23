@@ -4,9 +4,6 @@ body {
     min-height: 100vh;
     padding-bottom: 170px;
     background:linear-gradient(0deg, #f1b4dd, #cecaca46) ;
-   
-    
-      
 }
 
 .header {
@@ -162,7 +159,7 @@ body {
 }
 
 .footer {
-    background-color:#efb8dc ;
+    background:linear-gradient(180deg, #776a6a54, #f1b4dd ) ;
     padding: 20px 0;
     height: 165px;
     position: absolute;
